@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>NombreWeb - Series de Acción</title>
+<link rel='icon' href='images/favicon.ico' type='image/x-icon'/ >
+<link rel="stylesheet" href="../css/index.css">
+</head>
+<body>
+
+		<div class="topnav">
+		<a href="../index.html">Inicio</a> 
+		<a onmouseover="muestraPelis()" class="drop_pelis" >Películas</a> 
+		<a onmouseover="muestraSeries()" class="drop_series" class="active">Series</a> 
+		<a href="../html/seleccion.html">Tu Selección</a> 
+		<a href="../html/about.html">About</a>
+		<a href="../html/login.html">Login</a>
+	</div>
+	<div id="dropdown_peliculas">
+		<div id="tipos_peliculas" class="dropdown_content_peli">
+			<a href="../html/peliculas_comedia.html" class="item_dropdown">Comedia</a> 
+			<a href="../html/peliculas_accion.html" class="item_dropdown">Acción</a>
+			<a href="../html/peliculas_scifi.html" class="item_dropdown">Sci-Fi</a> 
+			<a href="../html/peliculas_otros.html" class="item_dropdown">Otros</a>
+		</div>
+	</div>
+	<div id="dropdown_series">
+		<div id="tipos_series" class="dropdown_content_serie">
+			<a href="../html/series_comedia.html" class="item_dropdown">Comedia</a> 
+			<a href="../html/series_accion.html" class="item_dropdown">Acción</a>
+			<a href="../html/series_scifi.html" class="item_dropdown">Sci-Fi</a> 
+			<a href="../html/series_otros.html" class="item_dropdown">Otros</a>
+		</div>
+	</div>
+	
+
+	<div class="content">
+		<h2>Series de Acción</h2>
+	</div>
+
+	<div class="footer">
+		<img src="../images/descarga2.jpg" /> <img src="../images/descarga2.jpg" />
+		<img src="../images/descarga2.jpg" /> <img src="../images/descarga2.jpg" />
+	</div>
+
+
+	<script>
+		function muestraPelis() {
+			document.getElementById("tipos_peliculas").classList.toggle("show");
+		}
+		
+		function muestraSeries() {
+			document.getElementById("tipos_series").classList.toggle("show");
+		}
+		
+		window.onmouseover = function(event) {
+			if (!event.target.matches('.drop_pelis')) {
+				if (!event.target.matches('.drop_series')) {
+					if(!event.target.matches('.item_dropdown')){
+						var dropdowns = document.getElementsByClassName("dropdown_content_peli");
+						var i;
+						for (i = 0; i < dropdowns.length; i++) {
+							var openDropdown = dropdowns[i];
+							if (openDropdown.classList.contains('show')) {
+								openDropdown.classList.remove('show');
+							}
+						}
+						
+						var dropdowns = document.getElementsByClassName("dropdown_content_serie");
+						var i;
+						for (i = 0; i < dropdowns.length; i++) {
+							var openDropdown = dropdowns[i];
+							if (openDropdown.classList.contains('show')) {
+								openDropdown.classList.remove('show');
+							}
+						}
+					}
+				}
+			}
+		}
+		
+	</script>
+
+
+</body>
+</html>
