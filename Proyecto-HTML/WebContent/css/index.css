@@ -7,7 +7,7 @@ body {
 
 .topnav {
 	overflow: hidden;
-	background-color: #333;
+	background-color: #003333;
 }
 
 .topnav a {
@@ -70,3 +70,16 @@ body {
 	}
 
 .show {display: block;}
+
+.netflix{
+  width:150px;
+}
+.HBO{
+  width:100px;
+}
+.amazon{
+  width:200px;
+}
+.sky{
+  width:90px; 
+}
