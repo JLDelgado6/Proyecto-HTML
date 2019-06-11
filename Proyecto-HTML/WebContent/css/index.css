@@ -97,6 +97,13 @@ body {
     border:1px solid #000;
 }
 
+.video {	
+	height: 300 px;
+	position: absolute;
+	top:57px; 
+	left:38%; 
+}
+
 .logo{
 	height: 40px;
 }
