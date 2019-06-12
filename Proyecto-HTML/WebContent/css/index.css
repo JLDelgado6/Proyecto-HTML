@@ -102,15 +102,31 @@ h1{
    right: 65%;
 
 }
-.conteiner{
+.container{
    margin-left:8%;
-   margin-right:8%;
+   /*margin-right:8%;*/
+   margin-bottom:5%;
    border: white 20px solid;
    position: relative;
    overflow: hidden;
    float: left;
    height: 500px;
-   width: 80%;
+   width: 35%;
+   text-align: center;
+   background-color: #ffffff;
+}
+
+.aside{
+   /*margin-left:8%;*/
+   margin-right:8%;
+   margin-bottom:5%;
+   border: white 20px solid;
+   position: relative;
+   overflow: hidden;
+   float: right;
+   height: 500px;
+   width: 35%;
+   text-align: center;
    background-color: #ffffff;
 }
 
