@@ -75,7 +75,7 @@ body {
 
 .show {display: block;}
 
-.cabecera{
+.head{
     width: 100%;
     height: 100px;
     background-image: url("../images/prueba.jpg");
