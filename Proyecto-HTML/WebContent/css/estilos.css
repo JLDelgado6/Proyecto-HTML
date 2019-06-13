@@ -163,44 +163,44 @@ a.active {
 }
 
 .container3{
-   margin-left:4%;
-   margin-right:3%;
+   margin-left:5%;
+   margin-right:2.5%;
    margin-bottom:5%;
    border: white 20px solid;
    position: relative;
    overflow: hidden;
    float: left;
    height: 500px;
-   width: 14%;
+   width: 15%;
    text-align: center;
    background-color: #ffffff;
    z-index: -1;
 }
 
 .container4{
-   margin-left:3%;
-   margin-right:3%;
+   margin-left:2.5%;
+   margin-right:2.5%;
    margin-bottom:5%;
    border: white 20px solid;
    position: relative;
    overflow: hidden;
    float: center;
    height: 500px;
-   width: 30%;
+   width: 32.5%;
    text-align: center;
    background-color: #ffffff;
 }
 
 .container5{
-   margin-left:3%;
-   margin-right:4%;
+   margin-left:2.5%;
+   margin-right:5%;
    margin-bottom:5%;
    border: white 20px solid;
    position: relative;
    overflow: hidden;
    float: right;
    height: 500px;
-   width: 30%;
+   width: 32.5%;
    text-align: center;
    background-color: #ffffff;
 }
@@ -285,6 +285,10 @@ a.active {
 	text-align: justify ;
 	height: auto;
 	border: white 50px solid;	
+}
+
+#containers {
+  display: flex;
 }
 
 #container3{
