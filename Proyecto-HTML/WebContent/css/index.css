@@ -149,6 +149,10 @@ h1{
 .logo{
 	height: 30px;
 }
+#container{
+	width: 80%;	
+	margin-right:8%;
+}
 
 #IMG01{
 	height: 70px;
