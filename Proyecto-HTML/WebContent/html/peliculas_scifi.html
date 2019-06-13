@@ -4,7 +4,7 @@
 <meta charset="ISO-8859-1">
 <title>NombreWeb - Peliculas de Sci-Fic</title>
 <link rel="icon" type="image/png" href="../images/IMG07.png" />
-<link rel="stylesheet" href="../css/index.css">
+<link rel="stylesheet" href="../css/estilos.css">
 <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/glacial-indifference" type="text/css"/>
 <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/bebas" type="text/css"/>
 </head>
@@ -15,30 +15,40 @@
 	    <h1 id = "titulo"> FILM WORLD </h1>
       </div>
 
-		<div class="topnav">
-		<a href="../index.html">Inicio</a> 
-		<a onmouseover="muestraPelis()" class="drop_pelis" >Películas</a> 
-		<a onmouseover="muestraSeries()" class="drop_series" class="active">Series</a> 
-		<a href="../html/seleccion.html">Tu Selección</a> 
-		<a href="../html/about.html">About</a>
-		<a href="../html/login.html">Login</a>
-	</div>
-	<div id="dropdown_peliculas">
-		<div id="tipos_peliculas" class="dropdown_content_peli">
-			<a href="../html/peliculas_comedia.html" class="item_dropdown">Comedia</a> 
-			<a href="../html/peliculas_accion.html" class="item_dropdown">Acción</a>
-			<a href="../html/peliculas_scifi.html" class="item_dropdown">Sci-Fi</a> 
-			<a href="../html/peliculas_otros.html" class="item_dropdown">Otros</a>
-		</div>
-	</div>
-	<div id="dropdown_series">
-		<div id="tipos_series" class="dropdown_content_serie">
-			<a href="../html/series_comedia.html" class="item_dropdown">Comedia</a> 
-			<a href="../html/series_accion.html" class="item_dropdown">Acción</a>
-			<a href="../html/series_scifi.html" class="item_dropdown">Sci-Fi</a> 
-			<a href="../html/series_otros.html" class="item_dropdown">Otros</a>
-		</div>
-	</div>
+		 <nav>
+	    <ul>
+	        <li>
+	            <a href="../index.html">Inicio</a> 
+	        </li>
+	        <li>
+	        	<a class="active">Películas</a>        	
+	            <ul>				
+					<li><a href="../html/peliculas_comedia.html" class="item_dropdown">Comedia</a></li> 
+					<li><a href="../html/peliculas_accion.html" class="item_dropdown">Acción</a></li>
+					<li><a href="../html/peliculas_scifi.html" class="item_dropdown">Sci-Fi</a></li>
+					<li><a href="../html/peliculas_otros.html" class="item_dropdown">Otros</a></li>
+	            </ul>
+	        </li>
+	        <li>
+	        	<a>Series</a>        	
+	            <ul>				
+					<li><a href="../html/series_comedia.html" class="item_dropdown">Comedia</a> </li> 
+					<li><a href="../html/series_accion.html" class="item_dropdown">Acción</a></li>
+					<li><a href="../html/series_scifi.html" class="item_dropdown">Sci-Fi</a></li>
+					<li><a href="../html/series_otros.html" class="item_dropdown">Otros</a></li>
+	            </ul>
+	        </li>
+	        <li>
+	            <a href="../html/seleccion.html">Tu Selección</a> 
+	        </li>
+	        <li>
+	            <a href="../html/about.html">About</a>
+	        </li>
+	        <li>
+	            <a id="loginBtn" href="../html/login.html">Login</a>
+	        </li>	        
+	    </ul>
+	</nav>
 
 	<div class="container">
 		<h2>Películas de Sci-Fi</h2>
@@ -50,45 +60,6 @@
 		<a href = "https://www.amazon.es/b?ie=UTF8&node=12092245031"><img class="logo" id = "IMG04" src="../images/IMG04.png" /></a> 
 		<a href = "https://www.sky.es/"><img class="logo" id = "IMG05" src="../images/IMG05.png" /></a>
 	</div>
-
-
-	<script>
-		function muestraPelis() {
-			document.getElementById("tipos_peliculas").classList.toggle("show");
-		}
-		
-		function muestraSeries() {
-			document.getElementById("tipos_series").classList.toggle("show");
-		}
-		
-		window.onmouseover = function(event) {
-			if (!event.target.matches('.drop_pelis')) {
-				if (!event.target.matches('.drop_series')) {
-					if(!event.target.matches('.item_dropdown')){
-						var dropdowns = document.getElementsByClassName("dropdown_content_peli");
-						var i;
-						for (i = 0; i < dropdowns.length; i++) {
-							var openDropdown = dropdowns[i];
-							if (openDropdown.classList.contains('show')) {
-								openDropdown.classList.remove('show');
-							}
-						}
-						
-						var dropdowns = document.getElementsByClassName("dropdown_content_serie");
-						var i;
-						for (i = 0; i < dropdowns.length; i++) {
-							var openDropdown = dropdowns[i];
-							if (openDropdown.classList.contains('show')) {
-								openDropdown.classList.remove('show');
-							}
-						}
-					}
-				}
-			}
-		}
-		
-	</script>
-
 
 </body>
 </html>
