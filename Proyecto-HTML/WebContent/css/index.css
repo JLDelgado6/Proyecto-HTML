@@ -30,8 +30,8 @@ h1{
 }
 
 .topnav a:hover {
-	background-color: #ddd;
-	color: black;
+	background-color: #2980B9;
+	color: white;
 }
 
 .topnav a.active {
@@ -41,7 +41,6 @@ h1{
 
 
 .drop_pelis, .drop_series {
-  background-color: #3498DB;
   color: white;
   padding: 16px;
   font-size: 16px;
@@ -185,6 +184,18 @@ h1{
 	position: absolute;
 	top:10px;
 	left:14%;
+}
+/* Selector CSS por atributo */
+a[href^="tel:"] {
+    font-size: 24px;
+    display: inline-block;
+    margin: 20px 30px;
+}
+
+/* Añadiendo icono como pseudoelemento CSS */
+a[href^="tel:"]::before {
+    content: "\260e";
+    margin-right: 0.5em;
 }
 
 
