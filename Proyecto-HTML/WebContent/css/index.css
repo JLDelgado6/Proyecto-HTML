@@ -13,6 +13,29 @@ h1{
 	color: white;
 }
 
+h2{
+	font-family: BebasNeueRegular; 
+    font-weight: normal; 
+    font-style: normal;
+    font-size: 50px;
+	text-align: center;
+	text-shadow: 3px 2px #f1f1f1;
+	color: #781334;
+}
+
+h3{
+	font-family: BebasNeueRegular; 
+    font-weight: normal; 
+    font-style: normal;
+    font-size: 30px;
+}
+
+p { 
+   font-family: GlacialIndifferenceRegular; 
+   font-weight: normal; 
+   font-style: normal; 
+}
+
 .topnav {
 	overflow: hidden;
 	position:relative;
@@ -138,19 +161,22 @@ h1{
     clear: both;
 }
 
-.video {	
-	height: 100 px;
-	position: absolute;
-	top:57px; 
-	right:0%; 
+.video{	
+	position: relative;
+	float: center; 
 }
 
 .logo{
 	height: 30px;
 }
+
 #container{
-	width: 80%;	
+	width: 75%;	
 	margin-right:8%;
+	margin-bottom:0;
+	text-align: justify ;
+	height: auto;
+	border: white 50px solid;	
 }
 
 #IMG01{
