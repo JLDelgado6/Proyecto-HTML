@@ -454,8 +454,15 @@ img {vertical-align: middle;}
 
 .video{	
 	position: relative;
-	float: center; 
+	width: 50%;
+    margin: 0 auto;
 }
+
+.video iframe{
+	width:560px;
+	height:360px; 
+}
+
 
 .logo{
 	height: 30px;
