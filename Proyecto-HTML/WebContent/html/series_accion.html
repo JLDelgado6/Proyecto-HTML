@@ -2,8 +2,8 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>NombreWeb - Series de Acción</title>
-<link rel="stylesheet" href="../css/estilos.css">
+<title>FilmWorld - Series de Acción</title>
+<link rel="stylesheet" href="../css/estilos2.css">
 <link rel='icon' href='../images/favicon.ico' type='image/x-icon'/>
 <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/glacial-indifference" type="text/css"/>
 <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/bebas" type="text/css"/>
@@ -39,9 +39,6 @@
 	            </ul>
 	        </li>
 	        <li>
-	            <a href="../html/seleccion.html">Tu Selección</a> 
-	        </li>
-	        <li>
 	            <a href="../html/about.html">About</a>
 	        </li>
 	        <li>
@@ -52,6 +49,79 @@
 
 	<div class="container" id ="container">
 		<h2>Series de Acción</h2>
+	
+	
+		<div class="slid_completo">
+			<div class="slideshow-container">
+				<div class="mySlides fade">
+				  <div class="numbertext">1 / 4</div>
+				  <img src="../images/series/accion_daredevil1.jpg" style="width:100%">
+				  <div class="text">Daredevil</div>
+				</div>
+				
+				<div class="mySlides fade">
+				  <div class="numbertext">2 / 4</div>
+				  <img src="../images/series/accion_daredevil2.jpg" style="width:100%">
+				  <div class="text">Daredevil</div>
+				</div>
+				
+				<div class="mySlides fade">
+				  <div class="numbertext">3 / 4</div>
+				  <img src="../images/series/accion_blindspot1.jpg" style="width:100%">
+				  <div class="text">BlindSpot</div>
+				</div>
+				
+				<div class="mySlides fade">
+				  <div class="numbertext">4 / 4</div>
+				  <img src="../images/series/accion_blindspot2.jpg" style="width:100%">
+				  <div class="text">BlindSpot</div>
+				</div>
+				
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+			</div>		
+			<div style="text-align:center">
+			  <br>
+			  <span class="dot" onclick="currentSlide(1)"></span> 
+			  <span class="dot" onclick="currentSlide(2)"></span> 
+			  <span class="dot" onclick="currentSlide(3)"></span>
+			  <span class="dot" onclick="currentSlide(4)"></span>  
+			</div>
+		</div>
+
+		<div class="apartado">
+			<div class="apartadoVideo">
+				<iframe src="https://www.youtube.com/embed/UldyKvKdsEM"></iframe>
+			</div>
+			<div class="apartadoTexto">
+			<h3>Daredevil</h3>
+				<p>
+					'Daredevil' gira en torno a Matt Murdock, un abogado de día y superhéroe de noche. A pesar de ser ciego, posee un oído, un olfato, una fuerza y una agilidad increíblemente desarrolladas. Sin descanso, Matt Murdoch recorrerá las calles de Hell's Kitchen, en Nueva York, a la caza de todo tipo de criminales a los que no puede castigar un tribunal.
+				</p>
+				<p>
+					La serie, de corte dramático, con aventuras y mucha acción, está basada en el cómic homónimo de Marvel. El guionista, 'showrunner', productor ejecutivo y director de la serie del supehéroe es Drew Goddard, también encargado del guión de 'La cabaña del bosque' y de 'Guerra Mundial Z'. Está producida por Marvel Television asociada con ABC Studios, DeKnight Productions, Walt Disney Company y Goddard Textiles. Netflix se ha encargado de su difusión mediante su plataforma. La serie está protagonizada por Charlie Cox y completan el reparto actores como Rosario Dawson, Vincent D'Onofrio, Deborah Ann Woll, Elden Henson y Toby Leonard Moore.
+				</p>
+				<p>
+					Se trata de una de las cuatro series que Netflix hace junto a 'Jessica Jones', 'Luke Cage' y 'Puño de Hierro'. Cada una consta de 13 episodios y se aúnan en la miniserie 'The Defenders', el grupo de superhéroes de Marvel al que pertenecen o pertenecieron en algún momento.
+				</p>
+			</div>
+		</div>
+		
+		
+		<div class="apartado">
+			<div class="apartadoVideo">
+				<iframe src="https://www.youtube.com/embed/G7s5UDpwdXM"></iframe>
+			</div>
+			<div class="apartadoTexto">
+			<h3>BlindSpot</h3>
+				<p>
+					<i>Blindspot</i>&nbsp;parte de una atractiva mujer, sin recuerdos de su pasado, que aparece desnuda en Times Square cubriendo su cuerpo solamente de tatuajes intrincados. Su descubrimiento pone en marcha un gran y complejo misterio que llama inmediatamente la atención del FBI, que comienzan a seguir la hoja de ruta en su cuerpo para revelar una conspiración más amplia de delito y, de esa manera, descubrir la verdad sobre su identidad.
+				</p>
+				<p>
+					La serie está protagonizada por Jaimie Alexander, Sullivan Stapleton, Audrey Esparza, Rob Brown, Marianne Jean-Baptiste, Ukweli Roach y Ashley Johnson. Los productores ejecutivos son Martin Gero, Grego Berlanti, Mark Pellington y Sarah Schechter.
+				</p>
+			</div>
+		</div>
 	</div>
 
 	<div class="footer">
@@ -60,5 +130,34 @@
 		<a href = "https://www.amazon.es/b?ie=UTF8&node=12092245031"><img class="logo" id = "IMG04" src="../images/IMG04.png" /></a> 
 		<a href = "https://www.sky.es/"><img class="logo" id = "IMG05" src="../images/IMG05.png" /></a>
 	</div>
+	
+<script>
+	var slideIndex = 1;
+	showSlides(slideIndex);
+	
+	function plusSlides(n) {
+	  showSlides(slideIndex += n);
+	}
+	
+	function currentSlide(n) {
+	  showSlides(slideIndex = n);
+	}
+	
+	function showSlides(n) {
+	  var i;
+	  var slides = document.getElementsByClassName("mySlides");
+	  var dots = document.getElementsByClassName("dot");
+	  if (n > slides.length) {slideIndex = 1}    
+	  if (n < 1) {slideIndex = slides.length}
+	  for (i = 0; i < slides.length; i++) {
+	      slides[i].style.display = "none";  
+	  }
+	  for (i = 0; i < dots.length; i++) {
+	      dots[i].className = dots[i].className.replace(" active", "");
+	  }
+	  slides[slideIndex-1].style.display = "block";  
+	  dots[slideIndex-1].className += " active";
+	}
+</script>
 </body>
 </html>

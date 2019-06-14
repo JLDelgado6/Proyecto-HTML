@@ -2,9 +2,9 @@
 <html lang="es">
 <head>
 <meta charset="ISO-8859-1">
-<title>NombreWeb - Peliculas de Sci-Fic</title>
+<title>FilmWorld - Peliculas de Sci-Fic</title>
 <link rel="icon" type="image/png" href="../images/IMG07.png" />
-<link rel="stylesheet" href="../css/estilos.css">
+<link rel="stylesheet" href="../css/estilos2.css">
 <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/glacial-indifference" type="text/css"/>
 <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/bebas" type="text/css"/>
 </head>
@@ -39,9 +39,6 @@
 	            </ul>
 	        </li>
 	        <li>
-	            <a href="../html/seleccion.html">Tu Selección</a> 
-	        </li>
-	        <li>
 	            <a href="../html/about.html">About</a>
 	        </li>
 	        <li>
@@ -50,8 +47,79 @@
 	    </ul>
 	</nav>
 
-	<div class="container">
+	<div class="container" id="container">
 		<h2>Películas de Sci-Fi</h2>
+
+		<div class="slid_completo">
+			<div class="slideshow-container">
+				<div class="mySlides fade">
+				  <div class="numbertext">1 / 4</div>
+				  <img src="../images/peliculas/scifi_inter1.jpeg" style="width:100%">
+				  <div class="text">Interstellar</div>
+				</div>
+				
+				<div class="mySlides fade">
+				  <div class="numbertext">2 / 4</div>
+				  <img src="../images/peliculas/scifi_inter2.jpg" style="width:100%">
+				  <div class="text">Interstellar</div>
+				</div>
+				
+				<div class="mySlides fade">
+				  <div class="numbertext">3 / 4</div>
+				  <img src="../images/peliculas/scifi_logan1.jpg" style="width:100%">
+				  <div class="text">Logan</div>
+				</div>
+				
+				<div class="mySlides fade">
+				  <div class="numbertext">4 / 4</div>
+				  <img src="../images/peliculas/scifi_logan2.png" style="width:100%">
+				  <div class="text">Logan</div>
+				</div>
+				
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+			</div>		
+			<div style="text-align:center">
+			  <br>
+			  <span class="dot" onclick="currentSlide(1)"></span> 
+			  <span class="dot" onclick="currentSlide(2)"></span> 
+			  <span class="dot" onclick="currentSlide(3)"></span>
+			  <span class="dot" onclick="currentSlide(4)"></span>  
+			</div>
+		</div>
+		
+		<div class="apartado">
+			<div class="apartadoVideo">
+				<iframe src="https://www.youtube.com/embed/3OUSBjG3peI"></iframe>
+			</div>
+			<div class="apartadoTexto">
+			<h3>Logan</h3>
+				<p>
+					Es el año 2029. Los mutantes prácticamente han desparecido. Un cansado y abatido Logan (Hugh Jackman) vive retirado en la ciudad mexicana de El Paso. Es una sombra de lo que era. Se gana la vida conduciendo limusinas y se emborracha más de la cuenta. Su compañero en el exilio es el Profesor Charles Xavier (Patrick Stewart), también en las últimas, ya que está enfermo, inválido y con sus facultades mentales deterioradas. Logan cuida de él. 
+				</p>
+				<p>
+					Pero los intentos de Logan por ocultarse del mundo y olvidar su legado terminarán con la aparición de la joven Laura Kinney (Dafne Keen), también conocida como X-23, una niña que parece tener sus mismos poderes, y que está siendo perseguida por fuerzas oscuras. Esto obligará a Logan a enfrentarse a un villano de su antiguo pasado en una misión a vida o muerte.
+				</p>
+				<p>
+					<i>Logan</i> es la nueva película de Lobezno, después de <i>X-Men Orígenes: Lobezno</i> (2009) y <i>Lobezno inmortal</i> (2013). Esta tercera entrega sobre el mutante más legendario de la saga<i> X-Men</i> cuenta con James Mangold (<i>Lobezno inmortal, Noche y Día, El tren de las 3:10</i>) como director. Sus protagonistas son Hugh Jackman (<i>Pan: Viaje a Nunca Jamás, Chappie, X-Men: Días del futuro pasado</i>) como Logan, Patrick Stewart (<i>Blunt Talk, Ted 2, Lobezno inmortal</i>) como el Profesor Charles Xavier, Boyd Holbrook (<i>Narcos, La venganza de Jane</i>) como Donald Pierce y la joven Dafne Keen (<i>Refugiados</i>) como Laura Kinney.
+				</p>
+			</div>
+		</div>
+		
+		<div class="apartado">
+			<div class="apartadoVideo">
+				<iframe src="https://www.youtube.com/embed/1weAVdHUNlk"></iframe>
+			</div>
+			<div class="apartadoTexto">
+			<h3>Interstellar</h3>
+				<p>
+					Inspirada en la teoría del experto en relatividad Kip Stepehen Thorne sobre la existencia de los agujeros de gusano, y su función como canal para llevar a cabo los viajes en el tiempo. La historia gira en torno a un grupo de intrépidos exploradores que se adentran por uno de esos agujeros y viajan a través del mismo, encontrándose en otra dimensión. Un mundo desconocido se abre ante ellos y deberán luchar por mantenerse unidos si quieren volver de una pieza.
+				</p>
+				<p>
+					La película cuenta con un reparto de lujo con nombres como Matthew McConaughey ('Sahara'), Anne Hathaway ('El caballero oscuro. La leyenda renace'), Jessica Chastain ('La noche más oscura') y Michael Caine ('El caballero oscuro'), todos ellos a las órdenes de Christopher Nolan ('Memento', 'Origen').
+				</p>
+			</div>
+		</div>		
 	</div>
 
 	<div class="footer">
@@ -60,6 +128,35 @@
 		<a href = "https://www.amazon.es/b?ie=UTF8&node=12092245031"><img class="logo" id = "IMG04" src="../images/IMG04.png" /></a> 
 		<a href = "https://www.sky.es/"><img class="logo" id = "IMG05" src="../images/IMG05.png" /></a>
 	</div>
+	
+<script>
+	var slideIndex = 1;
+	showSlides(slideIndex);
+	
+	function plusSlides(n) {
+	  showSlides(slideIndex += n);
+	}
+	
+	function currentSlide(n) {
+	  showSlides(slideIndex = n);
+	}
+	
+	function showSlides(n) {
+	  var i;
+	  var slides = document.getElementsByClassName("mySlides");
+	  var dots = document.getElementsByClassName("dot");
+	  if (n > slides.length) {slideIndex = 1}    
+	  if (n < 1) {slideIndex = slides.length}
+	  for (i = 0; i < slides.length; i++) {
+	      slides[i].style.display = "none";  
+	  }
+	  for (i = 0; i < dots.length; i++) {
+	      dots[i].className = dots[i].className.replace(" active", "");
+	  }
+	  slides[slideIndex-1].style.display = "block";  
+	  dots[slideIndex-1].className += " active";
+	}
+</script>
 
 </body>
 </html>

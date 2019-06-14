@@ -2,11 +2,11 @@
 <html lang="es">
 <head>
 <meta charset="ISO-8859-1">
-<title>NombreWeb - Peliculas de Accion</title>
+<title>FilmWorld - Peliculas de Accion</title>
 <link rel="icon" type="image/png" href="../images/IMG07.png" />
 <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/glacial-indifference" type="text/css"/>
 <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/bebas" type="text/css"/>
-<link rel="stylesheet" href="../css/estilos.css">
+<link rel="stylesheet" href="../css/estilos2.css">
 </head>
 <body>
 
@@ -39,9 +39,6 @@
 	            </ul>
 	        </li>
 	        <li>
-	            <a href="../html/seleccion.html">Tu Selección</a> 
-	        </li>
-	        <li>
 	            <a href="../html/about.html">About</a>
 	        </li>
 	        <li>
@@ -50,8 +47,80 @@
 	    </ul>
 	</nav>
 
-	<div class="container">
+	<div class="container" id="container">
 		<h2>Películas de Acción</h2>
+
+		<div class="slid_completo">
+			<div class="slideshow-container">
+				<div class="mySlides fade">
+				  <div class="numbertext">1 / 4</div>
+				  <img src="../images/peliculas/accion_cab1.jpg" style="width:100%">
+				  <div class="text">El Caballero Oscuro</div>
+				</div>
+				
+				<div class="mySlides fade">
+				  <div class="numbertext">2 / 4</div>
+				  <img src="../images/peliculas/accion_cab2.jpg" style="width:100%">
+				  <div class="text">El Caballero Oscuro</div>
+				</div>
+				
+				<div class="mySlides fade">
+				  <div class="numbertext">3 / 4</div>
+				  <img src="../images/peliculas/accion_inf1.jpg" style="width:100%">
+				  <div class="text">Infinity War</div>
+				</div>
+				
+				<div class="mySlides fade">
+				  <div class="numbertext">4 / 4</div>
+				  <img src="../images/peliculas/accion_inf2.jpg" style="width:100%">
+				  <div class="text">Infinity War</div>
+				</div>
+				
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+			</div>		
+			<div style="text-align:center">
+			  <br>
+			  <span class="dot" onclick="currentSlide(1)"></span> 
+			  <span class="dot" onclick="currentSlide(2)"></span> 
+			  <span class="dot" onclick="currentSlide(3)"></span>
+			  <span class="dot" onclick="currentSlide(4)"></span>  
+			</div>
+		</div>
+		
+		<div class="apartado">
+			<div class="apartadoVideo">
+				<iframe src="https://www.youtube.com/embed/XhDemiYIrnA"></iframe>
+			</div>
+			<div class="apartadoTexto">
+			<h3>Vengadores: Infinity War</h3>
+				<p>
+					Un nuevo peligro acecha procedente de las sombras del cosmos. Thanos, el infame tirano intergaláctico, tiene como objetivo reunir las seis Gemas del Infinito, artefactos de poder inimaginable, y usarlas para imponer su perversa voluntad a toda la existencia. Los Vengadores y sus aliados tendrán que luchar contra el mayor villano al que se han enfrentado nunca, y evitar que se haga con el control de la galaxia. En su nueva e impactante aventura, el destino de la Tierra nunca había sido más incierto, las Gemas del Infinito estarán en juego, unos querrán protegerlas y otros controlarlas, ¿quién ganará?
+				</p>
+				<p>
+					Tercera entrega de la saga Vengadores que vuelven a dirigir los hermanos Joe y Anthony Russo (Capitán América: Civil War, Capitán América: El Soldado de Invierno). El reparto estelar de actores está formado por Robert Downey Jr. (El juez) como Iron Man, Chris Evans (Un don excepcional) como Capitán América, Scarlett Johansson (Ghost in the Shell: El alma de la máquina) como Viuda negra, Chris Hemsworth (Thor: Ragnarok) como Thor, Mark Ruffalo (Ahora me ves 2) como Hulk, Anthony Mackie (Detroit) como Sam el Halcón, Tom Hiddleston (Kong. La Isla Calavera) como Loki, Jeremy Renner (La llegada) como Ojo de Halcón, Paul Rudd (Mute) como Ant-Man.
+				</p>
+			</div>
+		</div>
+		
+		<div class="apartado">
+			<div class="apartadoVideo">
+				<iframe src="https://www.youtube.com/embed/pdy2fp9NKMA"></iframe>
+			</div>
+			<div class="apartadoTexto">
+			<h3>El Caballero Oscuro</h3>
+				<p>
+					Después de derrotar a la Orden de las Sombras y frustrar al jefe de la mafia Carmine Falcone en 'Batman Begins', Bruce Wayne vuelve a enfundarse el traje del hombre murciélago para combatir el crimen en Gotham.
+				</p>
+				<p>
+					Con Falcone fuera, el mafioso Salvatore Maroni se ha hecho con el control en la ciudad y parece que la lucha de Batman frente a los criminales será interminable. Por suerte, la ciudad cuenta ahora con Harvey Dent, un nuevo Fiscal del Distrito caracterizado por su mano dura contra el crimen, lo que da un aire de esperanza a Gotham y permite que Bruce se centre en Rachel Dawes, el amor de su vida y la única que conoce su verdadera identidad.
+				</p>
+				<p>
+					Sin embargo, la llegada de un nuevo villano a la ciudad destruirá todos los planes de Batman. Se trata de El Joker, un psicópata retorcido y sádico, con una morbosa fascinación por todo lo que rodea al murciélago. Pronto comenzará a sembrar el pánico y a causar estragos en Gotham, convirtiéndose en el peor enemigo posible para El caballero oscuro.
+        		</p>
+			</div>
+		</div>
+		
 	</div>
 
 	<div class="footer">
@@ -60,6 +129,34 @@
 		<a href = "https://www.amazon.es/b?ie=UTF8&node=12092245031"><img class="logo" id = "IMG04" src="../images/IMG04.png" /></a> 
 		<a href = "https://www.sky.es/"><img class="logo" id = "IMG05" src="../images/IMG05.png" /></a>
 	</div>
-
+	
+<script>
+	var slideIndex = 1;
+	showSlides(slideIndex);
+	
+	function plusSlides(n) {
+	  showSlides(slideIndex += n);
+	}
+	
+	function currentSlide(n) {
+	  showSlides(slideIndex = n);
+	}
+	
+	function showSlides(n) {
+	  var i;
+	  var slides = document.getElementsByClassName("mySlides");
+	  var dots = document.getElementsByClassName("dot");
+	  if (n > slides.length) {slideIndex = 1}    
+	  if (n < 1) {slideIndex = slides.length}
+	  for (i = 0; i < slides.length; i++) {
+	      slides[i].style.display = "none";  
+	  }
+	  for (i = 0; i < dots.length; i++) {
+	      dots[i].className = dots[i].className.replace(" active", "");
+	  }
+	  slides[slideIndex-1].style.display = "block";  
+	  dots[slideIndex-1].className += " active";
+	}
+</script>
 </body>
 </html>

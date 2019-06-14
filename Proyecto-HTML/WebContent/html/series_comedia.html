@@ -2,9 +2,9 @@
 <html lang="es">
 <head>
 <meta charset="ISO-8859-1">
-<title>NombreWeb - Series de Comedia</title>
+<title>FilmWorld - Series de Comedia</title>
 <link rel="icon" type="image/png" href="../images/IMG07.png" />
-<link rel="stylesheet" href="../css/estilos.css">
+<link rel="stylesheet" href="../css/estilos2.css">
 <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/glacial-indifference" type="text/css"/>
 <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/bebas" type="text/css"/>
 </head>
@@ -39,9 +39,6 @@
 	            </ul>
 	        </li>
 	        <li>
-	            <a href="../html/seleccion.html">Tu Selección</a> 
-	        </li>
-	        <li>
 	            <a href="../html/about.html">About</a>
 	        </li>
 	        <li>
@@ -51,16 +48,113 @@
 	</nav>
 	
 
-	<div class="container">
+	<div class="container" id="container">
 		<h2>Series de Comedia</h2>
+		
+		<div class="slid_completo">
+			<div class="slideshow-container">
+				<div class="mySlides fade">
+				  <div class="numbertext">1 / 4</div>
+				  <img src="../images/series/comedia_goodomens1.jpg" style="width:100%">
+				  <div class="text">Good Omens</div>
+				</div>
+				
+				<div class="mySlides fade">
+				  <div class="numbertext">2 / 4</div>
+				  <img src="../images/series/comedia_goodomens2.jpg" style="width:100%">
+				  <div class="text">Good Omens</div>
+				</div>
+				
+				<div class="mySlides fade">
+				  <div class="numbertext">3 / 4</div>
+				  <img src="../images/series/comedia_suits1.jpg" style="width:100%">
+				  <div class="text">Suits</div>
+				</div>
+				
+				<div class="mySlides fade">
+				  <div class="numbertext">4 / 4</div>
+				  <img src="../images/series/comedia_suits2.jpg" style="width:100%">
+				  <div class="text">Suits</div>
+				</div>
+				
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+			</div>		
+			<div style="text-align:center">
+			  <br>
+			  <span class="dot" onclick="currentSlide(1)"></span> 
+			  <span class="dot" onclick="currentSlide(2)"></span> 
+			  <span class="dot" onclick="currentSlide(3)"></span>
+			  <span class="dot" onclick="currentSlide(4)"></span>  
+			</div>
+		</div>
+		
+		<div class="apartado">
+			<div class="apartadoVideo">
+				<iframe src="https://www.youtube.com/embed/85z53bAebsI"></iframe>
+			</div>
+			<h3>Suits</h3>
+			<div class="apartadoTexto">
+				<p>
+					El sueño de Mike siempre consistió en convertirse en el mejor abogado del mundo, pero todo acabó saliéndole mal y ahora, con una memoria eidética -como Sheldon Cooper en 'The Big Bang Theory'-, se dedica a aprobar los exámenes de admisión para la Escuela de Leyes sustituyendo a otras personas. Por azares de la vida consigue una entrevista con el Yang de su Ying: Harvey Specter, uno de los mejores abogados de la ciudad y todo un tiburón del mundo del Derecho.
+				</p>
+				<p>
+					Así empieza una relación que podría definirse de simbiótica. Mike es un genio, pero aún le falta mucho por aprender sobre el Derecho; Harvey, por su parte, puede que parezca un depredador de sangre fría, pero Mike le recuerda por qué se metió en el mundillo. Aunque todo no es tan fácil como parece. Para mantener a salvo sus trabajos -y sus pescuezos-, ambos tienen que ocultar su secreto de su jefa Jessica (Gina Torres, 'Matrix', 'Serenity') y del enemigo de Harvey Louis Litt (Rick Hoffman, 'Hostel', 'Deuda de sangre'). Mike pronto se acerca a Rachel Zane (Meghan Markle, 'Recuérdame', 'Fringe'), una asistente legal con problemas de ansiedad de la que acaba enamorándose. ¿Podrán Mike y Harvey esconder su secreto el tiempo suficiente? ¿Chocarán entre ellos por la ingenuidad del primero y la falta de escrúpulos éticos y la insensibilidad del segundo?
+    			</p>
+			</div>
+		</div>
+
+		<div class="apartado">
+			<div class="apartadoVideo">
+				<iframe src="https://www.youtube.com/embed/Ko_cDEoizVA"></iframe>
+			</div>
+			<div class="apartadoTexto">
+			<h3>Good Omens</h3>
+				<p>
+					<i>Good Omens</i> es la adaptación televisiva basada en la novela fantástica de "Buenos presagios" de Terry Pratchett y Neil Gaiman. La historia se ambienta cuando el Apocalipsis y el Juicio Final se acercan para destruir a la humanidad. Los ejércitos del Bien y el Mal se agrupan, la Atlántida está resurgiendo, llueven sapos y los ánimos están alterados. Todo parece camino a la destrucción, sin embargo, el ángel Aziraphale y un demonio llamado Crowley, que han vivido entre los simples mortales de la Tierra y han convivido como ellos, se unen para encontrar una solución.
+				</p>
+				<p>
+					El ángel, interpretado por Michael Sheen y el demonio, por David Tennant, trabajarán juntos para encontrar al anticristo y parar el Apocalipsis, ya que éste ha sido criado por una familia británica de bien en vez de haberlo hecho unas monjas adoradoras del Diablo.
+        		</p>
+			</div>
+		</div>
+		
 	</div>
 
-    <div class="footer">
+	<div class="footer">
 		<a href = "https://www.netflix.com/es/browse/genre/839338"><img class= "logo" id = "IMG02" src="../images/IMG02.jpg" /></a>
 		<a href = "https://es.hboespana.com/"><img class="logo" id = "IMG03" src="../images/IMG03.png" /></a>
 		<a href = "https://www.amazon.es/b?ie=UTF8&node=12092245031"><img class="logo" id = "IMG04" src="../images/IMG04.png" /></a> 
 		<a href = "https://www.sky.es/"><img class="logo" id = "IMG05" src="../images/IMG05.png" /></a>
 	</div>
-
+	
+<script>
+	var slideIndex = 1;
+	showSlides(slideIndex);
+	
+	function plusSlides(n) {
+	  showSlides(slideIndex += n);
+	}
+	
+	function currentSlide(n) {
+	  showSlides(slideIndex = n);
+	}
+	
+	function showSlides(n) {
+	  var i;
+	  var slides = document.getElementsByClassName("mySlides");
+	  var dots = document.getElementsByClassName("dot");
+	  if (n > slides.length) {slideIndex = 1}    
+	  if (n < 1) {slideIndex = slides.length}
+	  for (i = 0; i < slides.length; i++) {
+	      slides[i].style.display = "none";  
+	  }
+	  for (i = 0; i < dots.length; i++) {
+	      dots[i].className = dots[i].className.replace(" active", "");
+	  }
+	  slides[slideIndex-1].style.display = "block";  
+	  dots[slideIndex-1].className += " active";
+	}
+</script>
 </body>
 </html>

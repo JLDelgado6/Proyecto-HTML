@@ -2,9 +2,9 @@
 <html lang="es">
 <head>
 <meta charset="ISO-8859-1">
-<title>NombreWeb - Peliculas Comedia</title>
+<title>FilmWorld - Peliculas Comedia</title>
 <link rel="icon" type="image/png" href="../images/IMG07.png" />
-<link rel="stylesheet" href="../css/estilos.css">
+<link rel="stylesheet" href="../css/estilos2.css">
 <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/glacial-indifference" type="text/css"/>
 <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/bebas" type="text/css"/>
 </head>
@@ -39,9 +39,6 @@
 	            </ul>
 	        </li>
 	        <li>
-	            <a href="../html/seleccion.html">Tu Selección</a> 
-	        </li>
-	        <li>
 	            <a href="../html/about.html">About</a>
 	        </li>
 	        <li>
@@ -50,8 +47,80 @@
 	    </ul>
 	</nav>
 
-	<div class="container">
+	<div class="container" id="container">
 		<h2>Películas de Comedia</h2>
+
+		<div class="slid_completo">
+			<div class="slideshow-container">
+				<div class="mySlides fade">
+				  <div class="numbertext">1 / 4</div>
+				  <img src="../images/peliculas/comedia_snatch1.jpg" style="width:100%">
+				  <div class="text">Snatch: Cerdos y Diamantes</div>
+				</div>
+				
+				<div class="mySlides fade">
+				  <div class="numbertext">2 / 4</div>
+				  <img src="../images/peliculas/comedia_snatch2.jpg" style="width:100%">
+				  <div class="text">Snatch: Cerdos y Diamantes</div>
+				</div>
+				
+				<div class="mySlides fade">
+				  <div class="numbertext">3 / 4</div>
+				  <img src="../images/peliculas/comedia_rata1.jpg" style="width:100%">
+				  <div class="text">Ratatouille</div>
+				</div>
+				
+				<div class="mySlides fade">
+				  <div class="numbertext">4 / 4</div>
+				  <img src="../images/peliculas/comedia_rata2.jpg" style="width:100%">
+				  <div class="text">Ratatouille</div>
+				</div>
+				
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+			</div>		
+			<div style="text-align:center">
+			  <br>
+			  <span class="dot" onclick="currentSlide(1)"></span> 
+			  <span class="dot" onclick="currentSlide(2)"></span> 
+			  <span class="dot" onclick="currentSlide(3)"></span>
+			  <span class="dot" onclick="currentSlide(4)"></span>  
+			</div>
+		</div>
+		
+		<div class="apartado">
+			<div class="apartadoVideo">
+				<iframe src="https://www.youtube.com/embed/ni4tEtuTccc"></iframe>
+			</div>
+			<div class="apartadoTexto">
+			<h3>Snatch: Cerdos y Diamantes</h3>
+				<p>
+					Franky (Benicio del Toro, 'Che, el argentino') acaba de robar un enorme diamante que debe entregar a Avi (Dennis Farina), un mafioso neoyorquino. Por el camino, hace escala en Londres, donde se deja convencer por Boris (Rade Serbedzija, 'La pequeña Venecia') para apostar en un combate de boxeo clandestino. Lo que no sabe es que se trata de una trampa montada por los promotores del combate Vinny (Robbie Gee) y Sol (Lennie James) para arrebatarle la magnífica gema. Avi conoce a la perfección los problemas de su chico con el juego, por lo que en cuanto se entera de la trampa no duda en desplazarse a Londres y contratar los servicios de Tony (Vinnie Jones, 'El vagón de la muerte'), una leyenda del gatillo, que le ayudará a recuperar el codiciado diamante.
+				</p>
+				<p>
+					Por otro lado, el Turco (Jason Statham, 'Transporter') y Tommy (Stephen Graham) tienen un problema con su boxeador (Brad Pitt, 'Malditos bastardos'), un gitano completamente chiflado que se niega a dejarse vencer en el cuarto "round" como previamente habían acordado, y ahora se hallan en el punto de mira de El Ladrillo (Alan Ford), un gángster psicópata que se la tiene jurada.&nbsp;
+				</p>
+				<p>
+					Ambas historias se entrecruzarán de manera disparatada, violenta y muy, muy divertida. 
+				</p>
+			</div>
+		</div>
+		
+		<div class="apartado">
+			<div class="apartadoVideo">
+				<iframe src="https://www.youtube.com/embed/b5ZNJoS2RtI"></iframe>
+			</div>
+			<div class="apartadoTexto">
+			<h3>Ratatouille</h3>
+				<p>
+					Remy es una rata que vive en el corazón de París con sus amigos y familia de roedores. Sin embargo, y a diferencia de sus compañeros, tiene un sueño bastante peculiar. Quiere ser un cocinero profesional. Conseguirlo será difícil pues no cuenta con el apoyo de su familia, ni de los restaurantes, que desprecian a los roedores con todas sus ganas, más aún si el público se enterara que su plato fue cocinado por una rata. A pesar de tener todo en su contra, Remy, se cuela sin ser visto en un restaurante de cinco estrellas para mejorar los platos que allí elaboran. Linguini, un joven empleado recién llegado al lujoso restaurante le descubre. Sin embargo para su sorpresa, en vez de rechazarle y echarlo de la cocina, lo adopta como ayudante. El puesto del joven pende de un hilo. No cuenta con buenas dotes culinarias, por ello, llega a un acuerdo con la rata. Ella cocinará en secreto indicándole a él como hacerlo. Su plan es convertirse juntos en el mejor chef de París ¿Lo conseguirán?
+				</p>
+				<p>
+					Esta película de animación ha sido dirigida por Brad Bird.
+				</p>
+			</div>
+		</div>
+		
 	</div>
 
 	<div class="footer">
@@ -60,6 +129,35 @@
 		<a href = "https://www.amazon.es/b?ie=UTF8&node=12092245031"><img class="logo" id = "IMG04" src="../images/IMG04.png" /></a> 
 		<a href = "https://www.sky.es/"><img class="logo" id = "IMG05" src="../images/IMG05.png" /></a>
 	</div>
+	
+<script>
+	var slideIndex = 1;
+	showSlides(slideIndex);
+	
+	function plusSlides(n) {
+	  showSlides(slideIndex += n);
+	}
+	
+	function currentSlide(n) {
+	  showSlides(slideIndex = n);
+	}
+	
+	function showSlides(n) {
+	  var i;
+	  var slides = document.getElementsByClassName("mySlides");
+	  var dots = document.getElementsByClassName("dot");
+	  if (n > slides.length) {slideIndex = 1}    
+	  if (n < 1) {slideIndex = slides.length}
+	  for (i = 0; i < slides.length; i++) {
+	      slides[i].style.display = "none";  
+	  }
+	  for (i = 0; i < dots.length; i++) {
+	      dots[i].className = dots[i].className.replace(" active", "");
+	  }
+	  slides[slideIndex-1].style.display = "block";  
+	  dots[slideIndex-1].className += " active";
+	}
+</script>
 
 </body>
 </html>
